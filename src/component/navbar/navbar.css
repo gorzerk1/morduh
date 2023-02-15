@@ -1,0 +1,200 @@
+
+.navbar__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5rem;
+  width:100%;
+  background-color: black;
+  overflow: hidden;
+  position: fixed;
+  z-index:4;
+}
+
+.navbar__menuIcon,
+.navbar__facebook,
+.navbar__info {
+  display: flex;
+  align-items: center;
+  
+}
+
+.navbar__menuIcon {
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.navbar__buttons {
+  font-family: 'Secular One', sans-serif;;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1em;
+  gap:3rem;
+  margin-left:20rem;
+  
+  cursor: pointer;
+}
+
+.buttons__link {
+  border:2px solid #E7B132;
+  padding:3px 30px;
+  border-radius: 20px;
+  margin-left:2.5rem;
+  text-decoration:none;
+  color:white;
+  background-color: none;
+  transition: border 500ms, background-color 500ms;
+}
+
+.buttons__link:hover {
+  background-color:#E7B132;
+
+}
+
+.navbar__facebook {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.navbar__info {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.8rem;
+  gap: 1rem;
+  width: 30%;
+
+  
+}
+
+.navbar__logo {
+  width: 72px;
+  height: 72px;
+  cursor: pointer;
+  
+}
+
+.navbar__menuPop {
+  position: fixed;
+  width: 20px;
+  z-index:4;
+  background-color: black;
+  border:4px solid #E7B132;
+  width: 250px;
+  height: 350px;
+  left:30px;
+  top:60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: 'Secular One', sans-serif;;
+}
+
+.menuPop__link {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  padding:22.7px 0 22.7px 0;
+  text-decoration:none;
+  color:white;
+  background-color: none;
+  transition: background-color 500ms, color 500ms;
+}
+.menuPop__link:hover {
+  background-color: #E7B132;
+  color:black;
+}
+
+
+@media (max-width: 1610px) {
+  .navbar__buttons {
+    gap:4rem;
+    margin-left:0;
+
+  }
+  .navbar__buttons > :nth-child(1) {
+    display: none;
+  }
+  .navbar__info {
+    width:35%;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .navbar__buttons {
+    gap:0.5rem;
+    margin-left:0;
+  }
+
+  .navbar__buttons > :nth-child(2) {
+    display: none;
+  }
+  .navbar__info {
+    width:45%;
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 678px) {
+  .navbar__buttons{
+    font-size: 0.9rem;
+  }
+  .navbar__buttons > :nth-child(3) {
+    display: none;
+  }
+  .navbar__buttons > :nth-child(4) {
+    margin-left:5rem;
+  }
+
+  .navbar__info {
+    width:55%;
+    font-size: 0.7rem;
+  }
+  .navbar__menuIcon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 550px) {
+  
+  .navbar__buttons > :nth-child(4) {
+    margin-left:1rem;
+  }
+  .navbar__info {
+    width:60%;
+    font-size: 0.6rem;
+  }
+  .navbar__menuIcon {
+    width: 34px;
+    height: 34px;
+  }
+
+}
+
+@media (max-width: 460px) {
+  .navbar__buttons > :nth-child(4) {
+    margin-left:2.5rem;
+  }
+
+  .navbar__info > :nth-child(3) {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar__buttons {
+    display:none;
+  }
+  .navbar__info {
+    width: 90%;
+    justify-content:flex-end;
+  }
+  .navbar__info > :nth-child(4) {
+    margin-left:4.5rem;
+  }
+}

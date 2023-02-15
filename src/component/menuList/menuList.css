@@ -1,0 +1,99 @@
+.info__body {
+    position: relative;
+    margin-top:auto;
+}
+
+
+.menuList--background {
+    z-index: 0;
+    width: 100%;
+    height: 950px;
+    position: absolute;
+    
+}
+.menuList--container {
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    height: 59.4rem;
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Secular One', sans-serif;
+}
+.menuList--menu {
+    width: 56.375vw;
+    height:730px;
+    border:1px solid #e7b13241;
+    margin-bottom:80px;
+    margin-left:4.6875vw;
+    
+    
+    
+}
+.menuList__menu--buttons {
+    display: flex;
+    gap:4vw;
+    margin-bottom:49px;
+}
+
+.menuList__menu--buttons > div{
+    width:134.5px;
+    height:68px;
+    text-align:center;
+    margin-top: 57px;
+    border:1px solid #E7B132;
+    padding-top:14px;
+    font-size:1.7em;
+    border-radius: 15px;
+    transition: background-color 500ms, border 500ms;
+    cursor: pointer;
+
+}
+.menuList__menu--buttons > div:hover {
+    background-color: #E7B132;
+    border: 2px solid black;
+}
+.menuList__menu--buttons > .selected {
+    background-color: #E7B132;
+    border: 2px solid black;
+  }
+
+.menuList__menu--buttons :first-child{
+    margin-left:2.5vw;
+}
+.menuList__menu--buttons :last-child{
+    margin-right:2.5vw;
+}
+
+.menuList__menu--list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 46px;
+    margin-left:17px;
+}
+.menuList__menu__list--container {
+    width: 26vw;
+    height: 88px;
+    border-bottom:3px black solid;
+    display: flex;
+    border-radius: 10px;
+    transition: border-bottom 500ms;
+}
+.menuList__menu__list--container:hover {
+    border-bottom:3px #E7B132 solid;
+    border-left:3px #E7B132 solid;
+}
+
+.menu__list--info {
+    flex-grow:1;
+    text-align: right;
+}
+
+.menu__list--info :nth-child(1) {
+    font-size:1.6rem;
+}
+
+
+.menuList__menu__list--container :nth-child(1){
+    font-size:1.6rem;
+}

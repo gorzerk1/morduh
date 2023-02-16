@@ -31,14 +31,19 @@
   text-align: center;
   font-size:5rem;
   margin-right:0.7vw;
+  transition: text-shadow 500ms;
 }
 .slide-slogen {
   display: flex;
   font-family: 'Alfa Slab One', 'cursive';
   gap:20px;
   font-size: 4rem;
+  transition: text-shadow 500ms;
 }
 
+.slide-name:hover , .slide-slogen:hover {
+  text-shadow: 0 0 10px #E7B132;
+}
 .slide-slogen :nth-child(2){
   font-size:2rem;
   padding-top:19px

@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import 'react-slideshow-image/dist/styles.css'
 import { Slide } from 'react-slideshow-image';
 
-const Feature = () => {
+function Feature() {
   const images = [
     "https://cdn.discordapp.com/attachments/1065062267999223899/1074853133232132187/menu2.png",
     "https://cdn.discordapp.com/attachments/1065062267999223899/1074853132842041355/menu1.png",
@@ -57,12 +57,8 @@ const Feature = () => {
             <div>TOAST</div>
           </div>
         </div>
-        <div className='global-shadow-bottom'>
-            
-        </div>
-        <div className='global-shadow-top'>
-          
-        </div>
+        <div className='global-shadow-bottom'></div>
+        <div className='global-shadow-top'></div>
       </div>
   )
 }

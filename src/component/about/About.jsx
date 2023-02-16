@@ -4,7 +4,6 @@ const About = () => {
   return (
     <div className='about__body'>
       <img className='about__body--background' src="../../../backgroundAbout2.png" alt="" />
-
       <div className='about__body__container'>
 
         <div className='about_body__container--block1'>
@@ -16,6 +15,8 @@ const About = () => {
         </div>
     
       </div>
+      <div className='global-shadow-bottom'></div>
+      <div className='global-shadow-top'></div>
     </div>
 
   )

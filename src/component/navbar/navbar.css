@@ -3,12 +3,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4.5rem;
+  height: 4.6rem;
   width:100%;
   background-color: black;
   overflow: hidden;
   position: fixed;
-  z-index:4;
+  z-index:5;
 }
 
 .navbar__menuIcon,

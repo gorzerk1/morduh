@@ -1,0 +1,55 @@
+.global-shadow-bottom {
+    position: absolute;
+    bottom:0;
+    right:0;
+    width: 100%;
+    height: 20vh;
+    z-index:4;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.55) 26.56%, rgba(0, 0, 0, 0.9) 66.67%, #000000 100%);
+    
+}
+  .global-shadow-top {
+    position: absolute;
+    top:0;
+    right:0;
+    width: 100%;
+    height: 20vh;
+    transform: rotate(-180deg);
+    z-index:4;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.55) 26.56%, rgba(0, 0, 0, 0.9) 66.67%, #000000 100%);
+}
+
+.gallery-body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-background {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+.gallery-container {
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:30px 30px;
+    align-items: center;
+}
+
+.gallery-container > img {
+    width: 100%;
+    height: 25vh;
+    filter: brightness(100%);
+    transition: filter 200ms;
+}
+
+.gallery-container > img:hover {
+    filter: brightness(60%);
+}

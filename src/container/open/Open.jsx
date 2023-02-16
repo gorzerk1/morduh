@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Feature, About, MenuMain } from '../../component'
+import { Navbar, Feature, About, MenuMain, Info } from '../../component'
 
 function Open (){
   return (
@@ -9,6 +9,7 @@ function Open (){
       <Feature/>
       <About/>
       <MenuMain/>
+      <Info/>
       </div>
     </div>
   )

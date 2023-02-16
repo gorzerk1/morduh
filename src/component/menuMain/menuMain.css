@@ -24,7 +24,7 @@
     align-items: center;
 }
 .menu__body--text {
-    margin:0 0 5rem 3rem;
+    margin:0 5rem 5rem 0;
     font-size: 3rem;
 }
 
@@ -50,49 +50,19 @@
 .menu__container--topLayer > div {
     text-align: center;
     border:3px solid #E7B132;
-    background-color: rgba(0, 0, 0, 0.459);
-    
-}
-
-
-.container__bottomLayer--karih{
     margin-right:5rem;
-    
     width: 250px;
     height: 250px;
     border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.459);
+    transition: background-color 500ms
+}
+.menu__container--bottomLayer > div:hover,
+.menu__container--topLayer > div:hover {
+    background-color: rgba(0, 0, 0, 0.082);
 }
 
-.container__bottomLayer--metuganim{
-    margin-left:5rem;
 
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-}
-.container__topLayer--spacial {
-    margin-left:5rem;
-
-    width: 250px;
-    height: 250px;
-    border-radius: 50%
-}
-
-.container__topLayer--burger {
-    margin-left:5rem;
-
-    width: 250px;
-    height: 250px;
-    border-radius: 50%
-}
-
-.container__topLayer--naknik {
-    margin-left:5rem;
-
-    width: 250px;
-    height: 250px;
-    border-radius: 50%
-}
 @media (max-width: 1550px) {
 
     .menu__container--topLayer > div {

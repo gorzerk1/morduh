@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   const [menuOpened, setMenuOpened] = useState(false);
 
+
+
   const menu = (
     <div  className='navbar__menuPop'>
       <Link className='menuPop__link' to="/">דף הבית</Link>
@@ -22,7 +24,7 @@ const Navbar = () => {
 
       <div className='navbar__buttons'>
         <Link className="buttons__link">צור קשר</Link>
-        <Link className="buttons__link">גלריה</Link>
+        <Link className="buttons__link" to="/gallery">גלריה</Link>
         <Link className="buttons__link" to="/Menu">תפריט</Link>
         <Link className="buttons__link">הזמנה</Link>
       </div>

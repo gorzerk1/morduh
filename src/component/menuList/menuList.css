@@ -41,7 +41,7 @@
     height:68px;
     text-align:center;
     margin-top: 57px;
-    border:1px solid #E7B132;
+    border:1px solid var(--primary-color);
     padding-top:14px;
     font-size:1.7em;
     border-radius: 15px;
@@ -50,11 +50,11 @@
 
 }
 .menuList__menu--buttons > div:hover {
-    background-color: #E7B132;
+    background-color: var(--primary-color);
     border: 2px solid black;
 }
 .menuList__menu--buttons > .selected {
-    background-color: #E7B132;
+    background-color: var(--primary-color);
     border: 2px solid black;
   }
 
@@ -80,8 +80,8 @@
     transition: border-bottom 500ms;
 }
 .menuList__menu__list--container:hover {
-    border-bottom:3px #E7B132 solid;
-    border-left:3px #E7B132 solid;
+    border-bottom:3px var(--primary-color) solid;
+    border-left:3px var(--primary-color) solid;
 }
 
 .menu__list--info {

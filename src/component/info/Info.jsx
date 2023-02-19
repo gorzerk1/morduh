@@ -2,7 +2,7 @@ import React from 'react'
 
 const Info = () => {
   return (
-    <div className='info__body'> 
+    <div className='info__body' name="contact"> 
       <div className='info__container--google'>GOOGLE MAP</div>
       
       <div className='info__body--container'>

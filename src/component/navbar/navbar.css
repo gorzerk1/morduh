@@ -36,7 +36,7 @@
 }
 
 .buttons__link {
-  border:2px solid #E7B132;
+  border:2px solid var(--secondary-color);
   padding:3px 30px;
   border-radius: 20px;
   margin-left:2.5rem;
@@ -47,29 +47,29 @@
 }
 
 .buttons__link:hover {
-  background-color:#E7B132;
+  background-color:var(--secondary-color);
 
 }
-
 .navbar__facebook {
   width: 20px;
   height: 20px;
   cursor: pointer;
 }
-
 .navbar__info {
   display: flex;
   justify-content: flex-end;
   font-size: 0.8rem;
   gap: 1rem;
   width: 30%;
-
   
+}
+.navbar__info > div {
+  margin-top: 2px
 }
 
 .navbar__logo {
   width: 72px;
-  height: 72px;
+  height: 80px;
   cursor: pointer;
   
 }
@@ -77,9 +77,9 @@
 .navbar__menuPop {
   position: fixed;
   width: 20px;
-  z-index:4;
+  z-index:5;
   background-color: black;
-  border:4px solid #E7B132;
+  border:4px solid var(--secondary-color);
   width: 250px;
   height: 350px;
   left:30px;
@@ -104,7 +104,7 @@
   transition: background-color 500ms, color 500ms;
 }
 .menuPop__link:hover {
-  background-color: #E7B132;
+  background-color: var(--secondary-color);
   color:black;
 }
 

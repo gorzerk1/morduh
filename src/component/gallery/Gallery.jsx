@@ -2,7 +2,7 @@ import React from 'react'
 
 function Gallery(){
   return (
-    <div className='gallery-body'>
+    <div className='gallery-body' name="gallery">
       <img className='gallery-background' src="../../../backgroundAbout2.png" />
       <div className='gallery-container'>
         <img src="../../../gallery/image1.png" alt="" />

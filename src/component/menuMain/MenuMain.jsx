@@ -1,9 +1,9 @@
 import React from 'react'
-
-const Menu = () => {
+  
+function Menu(){
   
   return (
-    <div className='menu__body'>
+    <div className='menu__body' id="Menu">
       <img className='menu__body--background' src="./../../menu/background.png" />
 
       <div className='menu__body--container'>
@@ -40,7 +40,8 @@ const Menu = () => {
         </div>
         
       </div>
-
+      <div className='global-shadow-bottom'></div>
+      <div className='global-shadow-top'></div>
     </div>
   )
 }

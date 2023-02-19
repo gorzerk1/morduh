@@ -8,24 +8,27 @@
 
 .menu__body--background {
     position: absolute;
-   
     width: 100%;
-    height: 110vh;
-    }
+    height: 110svh;
+}
     
 .menu__body--container{
     position: relative;
     z-index: 1;
     width: 80rem;
-    height: 100vh;
+    height: 100svh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 .menu__body--text {
+    position: relative;
     margin:0 5rem 5rem 0;
     font-size: 3rem;
+    z-index: 10;
+    font-family: 'Secular One', sans-serif;;
 }
 
 
@@ -49,17 +52,21 @@
 .menu__container--bottomLayer > div,
 .menu__container--topLayer > div {
     text-align: center;
-    border:3px solid #E7B132;
+    border:3px solid var(--primary-color);
     margin-right:5rem;
     width: 250px;
     height: 250px;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.459);
-    transition: background-color 500ms
+    cursor: pointer;
+    transition: background-color 500ms, transform 500ms, font-size 500ms;
+    object-fit: cover;
 }
 .menu__container--bottomLayer > div:hover,
 .menu__container--topLayer > div:hover {
     background-color: rgba(0, 0, 0, 0.082);
+    transform: scale(1.05);
+    font-size: 1.1rem;
 }
 
 
@@ -151,3 +158,5 @@
     }
     
 }
+
+

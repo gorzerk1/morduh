@@ -1,0 +1,26 @@
+.orderType--body {
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.orderType--container {
+    min-width: 800px;
+    height: 300px;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: black;
+    z-index: 1;
+    box-shadow: 4px 4px 6px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.orderType--body__image {
+    position: absolute;
+    width: 100%;
+    height: 100svh;
+    z-index:0;
+}

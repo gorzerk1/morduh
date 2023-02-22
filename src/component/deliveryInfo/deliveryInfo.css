@@ -8,7 +8,7 @@
 }
 
 .deliveryInfo--container {
-    min-width: 500px;
+    min-width: 650px;
     height: 800px;
     display:flex;
     align-items: center;
@@ -17,58 +17,77 @@
     z-index: 1;
     box-shadow: 4px 4px 6px 4px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    position: relative;
     
+}
+
+.deliveryInfo--container--info {
+    margin-top:20px;
+    font-size: 2rem;
 }
 
 .deliveryInfo--grid {
     display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
-}
-
-.deliveryInfo--grid:nth-child(1) {
-    grid-row: 1 / 2;
-    grid-column: 1 / 3;
-}
-
-.deliveryInfo--grid:nth-child(2) {
-    grid-row: 1 / 2;
-    grid-column: 3 / 4;
-}
-
-.deliveryInfo--grid:nth-child(3) {
-    grid-row: 2 / 3;
-    grid-column: 1 / 2;
-}
-
-.deliveryInfo--grid:nth-child(4) {
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
-}
-
-.deliveryInfo--grid:nth-child(5) {
-    grid-row: 2 / 3;
-    grid-column: 3 / 4;
-}
-
-.deliveryInfo--grid:nth-child(6) {
-    grid-row: 3 / 4;
-    grid-column: 1 / 2;
+    grid-template-columns: repeat(3 , 1fr);
+    width: 80%;
+    gap:10px;
+    margin-top:200px;
 }
 
 
-
-
-
-
-.deliveryInfo--body__image {
+.deliveryInfo--body__background {
     position: absolute;
     width: 100%;
     height: 100svh;
     z-index:0;
 }
-.de
-.deliveryInfo--textbar {
+
+.deliveryInfo--body__close {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left:25px;
+    top:20px;
+}
+
+input[name='mytextbox'] {
+    width: 100%;
+    height: 35px;
+    background-color: var(--primary-color) ;
+    border:0;
+    border-radius: 10px;
+    font-size:1rem;
     text-align: end;
+    padding-right: 15px;
+}
+
+.deliveryInfo__grid--col , 
+.deliveryInfo__grid--col2,
+.deliveryInfo__grid--col3 {
+    height: 75px;
+    text-align: end;
+}
+
+.deliveryInfo__grid--col2 {
+    grid-column: span 2;
+}
+
+
+.deliveryInfo__grid--col3 {
+    grid-column: span 3;
+}
+.deliveryInfo__grid--col3 input {
+    height: 75px;
+}
+
+.deliveryInfo__grid--button {
+    margin-top:60px;
+    grid-column: span 3;
+    width: 30%;
+    margin-left:180px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+
 }

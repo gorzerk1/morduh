@@ -24,3 +24,27 @@
     height: 100svh;
     z-index:0;
 }
+
+.orderType--button {
+    border:1px solid var(--primary-color);
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color:white;
+    text-decoration: none;
+    transition: transform 400ms;
+}
+.orderType--button:hover {
+    transform: scale(1.1);
+    border:2px solid var(--primary-color);
+}
+
+.orderType--img {
+    height: 100px;
+    width: 100px;
+}
+

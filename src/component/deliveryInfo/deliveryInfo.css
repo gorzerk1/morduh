@@ -21,6 +21,18 @@
     
 }
 
+/* i forced the input to be specific in the whole container*/
+.deliveryInfo--container input {
+    width: 100%;
+    height: 35px;
+    background-color: var(--primary-color) ;
+    border:0;
+    border-radius: 10px;
+    font-size:1rem;
+    text-align: end;
+    padding-right: 15px;
+}
+
 .deliveryInfo--container--info {
     margin-top:20px;
     font-size: 2rem;
@@ -31,9 +43,26 @@
     grid-template-columns: repeat(3 , 1fr);
     width: 80%;
     gap:10px;
-    margin-top:200px;
+    margin-top:40px;
 }
 
+.deliveryInfo--savedInfo {
+    background-color: var(--primary-color);
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom:110px;
+    grid-column: span 3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+.deliveryInfo--savedInfo > img {
+    height: 50px;
+    width: 50px;
+    margin-left:15px;
+    cursor: pointer;
+}
 
 .deliveryInfo--body__background {
     position: absolute;
@@ -48,17 +77,6 @@
     position: absolute;
     left:25px;
     top:20px;
-}
-
-input[name='mytextbox'] {
-    width: 100%;
-    height: 35px;
-    background-color: var(--primary-color) ;
-    border:0;
-    border-radius: 10px;
-    font-size:1rem;
-    text-align: end;
-    padding-right: 15px;
 }
 
 .deliveryInfo__grid--col , 
@@ -84,10 +102,49 @@ input[name='mytextbox'] {
     margin-top:60px;
     grid-column: span 3;
     width: 30%;
-    margin-left:180px;
+    margin-left:215px;
     height: 40px;
     border-radius: 10px;
     background-color: var(--primary-color);
     cursor: pointer;
+    color:white;
+    font-family: 'Secular One', sans-serif;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
 }
+
+
+.deliveryInfo--checkBox {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right:76px;
+    top:591px;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+
+        background:-moz-radial-gradient(circle at 50% 50%, #FFFF00 0%, #1A1A1A 24%);
+
+        background:-webkit-radial-gradient(circle at 50% 50%, #FFFF00 0%, #1A1A1A 24%);
+    
+        background:-o-radial-gradient(circle at 50% 50%, #FFFF00 0%, #1A1A1A 24%);
+    
+        background:-ms-radial-gradient(circle at 50% 50%, #FFFF00 0%, #1A1A1A 24%);
+    
+        background:radial-gradient(circle at 50% 50%, #FFFF00 0%, #1A1A1A 24%);
+
+        border:1px solid var(--primary-color)
+  }
+

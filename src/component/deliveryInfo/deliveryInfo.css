@@ -56,7 +56,29 @@
     margin-bottom:110px;
     grid-column: span 3;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
   }
+.deliveryInfo--popDown {
+    position: absolute;
+    height: 120px;
+    background-color: var(--primary-color);
+    width: 100%;
+    top:40px;
+}
+
+.deliveryInfo--popDown--line {
+    height: 25px;
+    margin:10px 0 10px 0;
+    text-align: end;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.deliveryInfo--popDown--line > div {
+    margin:0 10px 0 10px;
+}
+
 .deliveryInfo--savedInfo > img {
     height: 50px;
     width: 50px;

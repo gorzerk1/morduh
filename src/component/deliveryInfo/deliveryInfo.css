@@ -41,6 +41,7 @@
 .deliveryInfo--grid {
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
+    direction: rtl;
     width: 80%;
     gap:10px;
     margin-top:40px;
@@ -63,20 +64,26 @@
     height: 120px;
     background-color: var(--primary-color);
     width: 100%;
-    top:40px;
+    top:32px;
+    border-radius: 0px 0px 11px 11px;
 }
 
 .deliveryInfo--popDown--line {
     height: 25px;
     margin:10px 0 10px 0;
-    text-align: end;
     cursor: pointer;
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: start;
 }
 .deliveryInfo--popDown--line > div {
     margin:0 10px 0 10px;
+}
+.deliveryInfo--bin {
+    height: 20px;
+    width: 20px;
+    margin-right:auto;
+    margin-left:10px;
 }
 
 .deliveryInfo--savedInfo > img {
@@ -106,6 +113,7 @@
 .deliveryInfo__grid--col3 {
     height: 75px;
     text-align: end;
+    direction: ltr;
 }
 
 .deliveryInfo__grid--col2 {
@@ -124,7 +132,7 @@
     margin-top:60px;
     grid-column: span 3;
     width: 30%;
-    margin-left:215px;
+    margin-right:215px;
     height: 40px;
     border-radius: 10px;
     background-color: var(--primary-color);
@@ -149,10 +157,11 @@ input[type="checkbox"] {
     appearance: none;
     width: 20px;
     height: 20px;
-    margin-left: 20px;
+    margin-right: 20px;
     background-color: var(--primary-color);
     border-radius: 4px;
     cursor: pointer;
+    
 }
 
 input[type="checkbox"]:checked {

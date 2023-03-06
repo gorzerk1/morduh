@@ -179,3 +179,7 @@ input[type="checkbox"]:checked {
         border:1px solid var(--primary-color)
   }
 
+.deliveryInfo--Link {
+    text-decoration:none;
+    color:white
+}

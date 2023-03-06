@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link as RouterLink } from 'react-router-dom'
 
 
 function DeliveryInfo(){
@@ -11,7 +12,7 @@ function DeliveryInfo(){
     { name: 'deliveryRequest', label: 'הערות לשליח', value: '', fit: "3" },
   ]);
 
-  const [formData, setFormData] = useState([])
+  const [formData, setFormData] = useState(JSON.parse(localStorage.getItem('formData')) || []);
   const [popDown, setPopDown] = useState(false)
   const [isSaved, setIsSaved] = useState(false)
   const [tempFormData, setTempFormData] = useState(null)
@@ -36,7 +37,10 @@ function DeliveryInfo(){
       newFormData[field.name] = field.value
     })
     if (isSaved) {
-      setFormData((prevFormData) => [...prevFormData, newFormData])
+      const savedFormData = JSON.parse(localStorage.getItem("formData")) || [];
+      const updatedFormData = [...savedFormData, newFormData];
+      localStorage.setItem("formData", JSON.stringify(updatedFormData));
+      setFormData(updatedFormData);
     } else if (!isSaved) {
       setTempFormData(newFormData)
     }
@@ -44,9 +48,10 @@ function DeliveryInfo(){
   }
 
   function removeFormData(index) {
-    const updatedFormData = [...formData]
-    updatedFormData.splice(index, 1)
-    setFormData(updatedFormData)
+    const updatedFormData = [...formData];
+    updatedFormData.splice(index, 1);
+    setFormData(updatedFormData);
+    localStorage.setItem('formData', JSON.stringify(updatedFormData));
   }
 
   const allInputs = formValues.map(field => {
@@ -94,16 +99,15 @@ function DeliveryInfo(){
           {allInputs}
           <div className='deliveryInfo--checkBox'>
             <label>שמור כתובת</label>
-            <input type="checkbox" name="myCheckbox" value="1" onClick={() => setIsSaved(!isSaved)}/>
+            <input type="checkbox" name="myCheckbox" onClick={() => setIsSaved(!isSaved)}/>
           </div>
-          <button className='deliveryInfo__grid--button'>אישור</button>
-          
+            <button className='deliveryInfo__grid--button'><RouterLink to="/order/menu" className='deliveryInfo--Link'>אישור</RouterLink></button>   
         </form>
 
 
       </div>
     </div>
   )
-} 
+}
 
 export default DeliveryInfo

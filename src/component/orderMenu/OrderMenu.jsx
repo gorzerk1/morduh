@@ -16,8 +16,212 @@ function OrderMenu(){
         <div>מטוגנים</div>
         <div>מיקסים</div>
       </div>
-      <div className='orderMenu--foodMenu'>asd2</div>
-      <div className='orderMenu--foodCart'>asd3</div>
+
+      <div className='orderMenu--foodMenu'>
+      <div className='orderMenu--container2'>
+          <img src="../../../gallery/image2.png" width='177px' height='121px'/>
+          <div className='foodMenu--Info'>
+           <div>ספיישל טוסט נקניק</div>
+           <div>4 סוגי נקניק, ביצת עין, רטבים ומבחר ירקות</div>
+           <div className='foodMenu--price'>
+            <div>35</div>
+            <img src="../../../shekel.png" alt="" />
+           </div>
+          </div>
+          <button>בחר</button>
+        </div>
+        <div className='orderMenu--container2'>
+          <img src="../../../gallery/image2.png" width='177px' height='121px'/>
+          <div className='foodMenu--Info'>
+           <div>ספיישל טוסט נקניק</div>
+           <div>4 סוגי נקניק, ביצת עין, רטבים ומבחר ירקות</div>
+           <div className='foodMenu--price'>
+            <div>35</div>
+            <img src="../../../shekel.png" alt="" />
+           </div>
+          </div>
+          <button>בחר</button>
+        </div>
+        <div className='orderMenu--container2'>
+          <img src="../../../gallery/image2.png" width='177px' height='121px'/>
+          <div className='foodMenu--Info'>
+           <div>ספיישל טוסט נקניק</div>
+           <div>4 סוגי נקניק, ביצת עין, רטבים ומבחר ירקות</div>
+           <div className='foodMenu--price'>
+            <div>35</div>
+            <img src="../../../shekel.png" alt="" />
+           </div>
+          </div>
+          <button>בחר</button>
+        </div>
+        <div className='orderMenu--container2'>
+          <img src="../../../gallery/image2.png" width='177px' height='121px'/>
+          <div className='foodMenu--Info'>
+           <div>ספיישל טוסט נקניק</div>
+           <div>4 סוגי נקניק, ביצת עין, רטבים ומבחר ירקות</div>
+           <div className='foodMenu--price'>
+            <div>35</div>
+            <img src="../../../shekel.png" alt="" />
+           </div>
+          </div>
+          <button>בחר</button>
+        </div>
+        <div className='orderMenu--container2'>
+          <img src="../../../gallery/image2.png" width='177px' height='121px'/>
+          <div className='foodMenu--Info'>
+           <div>ספיישל טוסט נקניק</div>
+           <div>4 סוגי נקניק, ביצת עין, רטבים ומבחר ירקות</div>
+           <div className='foodMenu--price'>
+            <div>35</div>
+            <img src="../../../shekel.png" alt="" />
+           </div>
+          </div>
+          <button>בחר</button>
+        </div>
+        <div className='orderMenu--container2'>
+          <img src="../../../gallery/image2.png" width='177px' height='121px'/>
+          <div className='foodMenu--Info'>
+           <div>ספיישל טוסט נקניק</div>
+           <div>4 סוגי נקניק, ביצת עין, רטבים ומבחר ירקות</div>
+           <div className='foodMenu--price'>
+            <div>35</div>
+            <img src="../../../shekel.png" alt="" />
+           </div>
+          </div>
+          <button>בחר</button>
+        </div>
+        <div className='orderMenu--container2'>
+          <img src="../../../gallery/image2.png" width='177px' height='121px'/>
+          <div className='foodMenu--Info'>
+           <div>ספיישל טוסט נקניק</div>
+           <div>4 סוגי נקניק, ביצת עין, רטבים ומבחר ירקות</div>
+           <div className='foodMenu--price'>
+            <div>35</div>
+            <img src="../../../shekel.png" alt="" />
+           </div>
+          </div>
+          <button>בחר</button>
+        </div>
+        <div className='orderMenu--container2'>
+          <img src="../../../gallery/image2.png" width='177px' height='121px'/>
+          <div className='foodMenu--Info'>
+           <div>ספיישל טוסט נקניק</div>
+           <div>4 סוגי נקניק, ביצת עין, רטבים ומבחר ירקות</div>
+           <div className='foodMenu--price'>
+            <div>35</div>
+            <img src="../../../shekel.png" alt="" />
+           </div>
+          </div>
+          <button>בחר</button>
+        </div>
+        <div className='orderMenu--container2'>
+          <img src="../../../gallery/image2.png" width='177px' height='121px'/>
+          <div className='foodMenu--Info'>
+           <div>ספיישל טוסט נקניק</div>
+           <div>4 סוגי נקניק, ביצת עין, רטבים ומבחר ירקות</div>
+           <div className='foodMenu--price'>
+            <div>35</div>
+            <img src="../../../shekel.png" alt="" />
+           </div>
+          </div>
+          <button>בחר</button>
+        </div>
+        <div className='orderMenu--container2'>
+          <img src="../../../gallery/image2.png" width='177px' height='121px'/>
+          <div className='foodMenu--Info'>
+           <div>ספיישל טוסט נקניק</div>
+           <div>4 סוגי נקניק, ביצת עין, רטבים ומבחר ירקות</div>
+           <div className='foodMenu--price'>
+            <div>35</div>
+            <img src="../../../shekel.png" alt="" />
+           </div>
+          </div>
+          <button>בחר</button>
+        </div>
+        <div className='orderMenu--container2'>
+          <img src="../../../gallery/image2.png" width='177px' height='121px'/>
+          <div className='foodMenu--Info'>
+           <div>ספיישל טוסט נקניק</div>
+           <div>4 סוגי נקניק, ביצת עין, רטבים ומבחר ירקות</div>
+           <div className='foodMenu--price'>
+            <div>35</div>
+            <img src="../../../shekel.png" alt="" />
+           </div>
+          </div>
+          <button>בחר</button>
+        </div>
+        <div className='orderMenu--container2'>
+          <img src="../../../gallery/image2.png" width='177px' height='121px'/>
+          <div className='foodMenu--Info'>
+           <div>ספיישל טוסט נקניק</div>
+           <div>4 סוגי נקניק, ביצת עין, רטבים ומבחר ירקות</div>
+           <div className='foodMenu--price'>
+            <div>35</div>
+            <img src="../../../shekel.png" alt="" />
+           </div>
+          </div>
+          <button>בחר</button>
+        </div>
+        <div className='orderMenu--container2'>
+          <img src="../../../gallery/image2.png" width='177px' height='121px'/>
+          <div className='foodMenu--Info'>
+           <div>ספיישל טוסט נקניק</div>
+           <div>4 סוגי נקניק, ביצת עין, רטבים ומבחר ירקות</div>
+           <div className='foodMenu--price'>
+            <div>35</div>
+            <img src="../../../shekel.png" alt="" />
+           </div>
+          </div>
+          <button>בחר</button>
+        </div>
+        <div className='orderMenu--container2'>
+          <img src="../../../gallery/image2.png" width='177px' height='121px'/>
+          <div className='foodMenu--Info'>
+           <div>ספיישל טוסט נקניק</div>
+           <div>4 סוגי נקניק, ביצת עין, רטבים ומבחר ירקות</div>
+           <div className='foodMenu--price'>
+            <div>35</div>
+            <img src="../../../shekel.png" alt="" />
+           </div>
+          </div>
+          <button>בחר</button>
+        </div>
+        <div className='orderMenu--container2'>
+          <img src="../../../gallery/image2.png" width='177px' height='121px'/>
+          <div className='foodMenu--Info'>
+           <div>ספיישל טוסט נקניק</div>
+           <div>4 סוגי נקניק, ביצת עין, רטבים ומבחר ירקות</div>
+           <div className='foodMenu--price'>
+            <div>35</div>
+            <img src="../../../shekel.png" alt="" />
+           </div>
+          </div>
+          <button>בחר</button>
+        </div>
+
+      </div>
+
+      <div className='orderMenu--foodCart'>
+        <div>פרטי הזמנה</div>
+        <div className='orderMenu--foodCart--order'>
+          <div className='foodCart--foodTopic'>
+            <div>מנה:</div>
+            <div>שינויים:</div>
+          </div>
+          <div className='foodCart--foodInfo'>
+            <div>המבוגר 200 גרם</div>
+            <div>בלי חסה, בלי עגבניות, קטשופ, חריף</div>
+          </div>
+          <div className='foodCart--images'>
+            <img src="../../../edit.png"/>
+            <img src="../../../bin.png" />
+          </div>
+        </div>
+
+        <button>
+          לתשלום
+        </button>
+      </div>
     </div>
   </div>
     )

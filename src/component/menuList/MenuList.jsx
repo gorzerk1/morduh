@@ -1,5 +1,5 @@
 import React, {useState, useRef} from 'react'
-import Data from './data'
+import Data from '../../data/MenuListData'
 
 function MenuList() {
     const [foodData, setFoodData] = useState(Data)

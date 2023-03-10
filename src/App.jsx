@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Feature, About, MenuMain, Info, MenuList, Gallery, OrderType, DeliveryInfo, OrderMenu} from './component'
+import { Navbar, Feature, About, MenuMain, Info, MenuList, Gallery, OrderType, DeliveryInfo, OrderMenu, PopUpOrder} from './component'
 import { Menu, Open } from './container'
 import { Routes , Route } from 'react-router-dom'
 
@@ -14,6 +14,7 @@ function App(){
       <Route path="/order/delivery" element={<DeliveryInfo/>}/>
       <Route path="/order/menu" element={<OrderMenu/>}/>
       <Route path="/menu" element={<MenuList/>}/>
+      <Route path="/test" element={<PopUpOrder/>}/>
     </Routes>
   )
 }

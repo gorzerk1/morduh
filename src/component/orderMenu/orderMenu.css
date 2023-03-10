@@ -13,16 +13,12 @@
     position: relative;
     z-index: 2;
     width: 95%;
-    height: 90svh;
-    border: 1px solid red;
+    height: 92.5svh;
     margin-top:40px;
     display: flex;
-    
     direction: rtl;
 }
-.orderMenu--container > div {
-    border:1px solid green
-}
+
 
 .orderMenu--foodText {
     width: 20%;
@@ -38,10 +34,15 @@
     justify-content: center;
     align-items: center;
     border:1px solid var(--primary-color);
-    background: rgba(255, 255, 255, 0.03);
-    
-    
+    background: var(--fade-background);
+    cursor: pointer;
+    transition: background 500ms, border-radius 500ms;
 }
+.orderMenu--foodText > div:hover {
+    background:var(--fade-background);
+    border-radius: 10px;
+}
+
 .orderMenu--foodText :not(:first-child) {
     margin-top:46px;
     background-color: var(--primary-color);
@@ -49,6 +50,7 @@
 
 .orderMenu--foodMenu {
     width: 60%;
+    overflow:auto;
 }
 
 .orderMenu--foodCart {
@@ -62,4 +64,131 @@
     justify-content: center;
     align-content: center;
     border:1px solid var(--primary-color);
+    padding-top:5px;
+    background: var(--fade-background)
+}
+
+.orderMenu--foodCart--order {
+    display: flex;
+    border:1px solid var(--primary-color);
+    height: 80px;
+    margin-top:20px;
+    background: var(--fade-background)
+}
+.foodCart--foodTopic :first-child{
+    margin-right:23px
+}
+.foodCart--images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 95px;
+}
+.foodCart--images :first-child {
+    height: 21.5px;
+    width: 21.5px;
+}
+
+.foodCart--images :last-child {
+    height: 25px;
+    width: 25px;
+}
+
+.foodCart--foodInfo , .foodCart--foodTopic {
+    margin-top:10px
+}
+
+
+.orderMenu--container button {
+    height: 40px;
+    width: 70%;
+    background-color: transparent;
+    color:white;
+    border:1px solid var(--primary-color);
+    margin:20px 55px 0 0;
+    border-radius: 10px;
+    background: var(--primary-color);
+    font-size:1rem;
+    font-family: var(--fade-background);
+}
+
+
+.orderMenu--container2 {
+    display: flex;
+    width: 85%;
+    border:1px solid var(--primary-color);
+    justify-content:space-between;
+    letter-spacing: 1px;
+    margin-bottom:20px;
+    background: rgba(231, 177, 50, 0.02)
+}
+.orderMenu--container2 > button {
+    width: 115px;
+    height: 55px;
+    margin:34px 0 0 30px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-family: var(--hebrew-font);
+    cursor: pointer;
+}
+.foodMenu--Info {
+    width: 56%;
+}
+
+.foodMenu--Info :first-child {
+    font-size:2rem;
+}
+
+.foodMenu--price {
+    display: flex;
+    gap:10px;
+    margin-top:10px
+}
+.foodMenu--price :first-child {
+    font-size: 1.5rem;
+}
+
+.foodMenu--price img {
+    width: 25px;
+    height: 25px;
+    margin:5px 0 0 0
+}
+.orderMenu--foodMenu::-webkit-scrollbar {
+    display: none;
+  }
+
+
+
+/* PopUpOrder css*/
+
+.PopUpOrder--body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.PopUpOrder--container {
+    position: absolute;
+    top: 10% ;
+    left: 30%;
+    border:1px solid red;
+    width: 600px;
+    height: 700px;
+    direction:rtl
+}
+.PopUpOrder--upper {
+    display: flex;
+    justify-content:space-between;
+}
+
+.PopUpOrder--title {
+    font-size: 1.5rem;
+    margin: 20px 20px 0 0;
+}
+
+.PopUpOrder--upper img {
+    height: 35px;
+    width: 35px;
+    margin:20px 0 0 20px
 }

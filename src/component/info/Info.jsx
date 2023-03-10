@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Info = () => {
+function Info(){
   return (
     <div className='info__body' name="contact"> 
       <div className='info__container--google'>GOOGLE MAP</div>

@@ -1,6 +1,8 @@
 :root {
   --primary-color: #E7B132;
   --secondary-color: #ffffff;
+  --hebrew-font:'Secular One', sans-serif;
+  --fade-background:rgba(231, 177, 50, 0.02)
 }
 
 *{

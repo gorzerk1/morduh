@@ -39,7 +39,7 @@ function PopUpOrder(){
                   <div className='options--container'>
                     <div className='options--button' onClick={addNaknikCapacity}>
                       <div>הודו ברביקיו</div>
-                      {addButtons("הודו ברביקיו")}    
+                      {addButtons("הודו ברביקיו")}
                     </div>
                     <div className='options--button' onClick={addNaknikCapacity}>
                       <div>הודו דבש</div>
@@ -47,11 +47,11 @@ function PopUpOrder(){
                     </div>
                     <div className='options--button' onClick={addNaknikCapacity}>
                       <div>כתף מעושן</div>
-                      {addButtons("כתף מעושן")}    
+                      {addButtons("כתף מעושן")}
                     </div>
                     <div className='options--button' onClick={addNaknikCapacity}>
                       <div>מעדן אווז</div>
-                      {addButtons("מעדן אווז")}    
+                      {addButtons("מעדן אווז")}
                     </div>
                     <div className='options--button' onClick={addNaknikCapacity}>
                       <div>רסטביף</div>
@@ -59,7 +59,7 @@ function PopUpOrder(){
                     </div>
                     <div className='options--button' onClick={addNaknikCapacity}>
                       <div>הבית</div>
-                      {addButtons()}    
+                      {addButtons()}
                     </div>
                   </div>
                   <div className='PopUpOrder--info'>
